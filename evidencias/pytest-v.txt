@@ -1,0 +1,35 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.0, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\hardz\AppData\Local\Programs\Python\Python312\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\hardz\OneDrive\Documentos\ProjetosCoding\CODING07
+plugins: anyio-4.14.2
+collecting ... collected 13 items
+
+tests/test_reembolsos.py::test_cenario_01_colaborador_nao_consulta_solicitacao_alheia PASSED [  7%]
+tests/test_reembolsos.py::test_cenario_02_gestor_de_outro_departamento_nao_aprova PASSED [ 15%]
+tests/test_reembolsos.py::test_cenario_03_senha_incorreta_nao_autentica PASSED [ 23%]
+tests/test_reembolsos.py::test_cenario_04_cadastro_nao_aceita_alteracao_de_perfil_ou_departamento PASSED [ 30%]
+tests/test_reembolsos.py::test_cenario_05_financeiro_nao_pula_etapa_do_gestor PASSED [ 38%]
+tests/test_reembolsos.py::test_cenario_06_solicitacao_enviada_nao_pode_ser_alterada PASSED [ 46%]
+tests/test_reembolsos.py::test_cenario_07_filtro_de_gestor_restringe_ao_departamento PASSED [ 53%]
+tests/test_reembolsos.py::test_cenario_08_historico_completo_identifica_responsaveis PASSED [ 61%]
+tests/test_reembolsos.py::test_referencia_duplicada_do_mesmo_colaborador_e_rejeitada PASSED [ 69%]
+tests/test_reembolsos.py::test_valor_zero_e_data_futura_sao_rejeitados PASSED [ 76%]
+tests/test_reembolsos.py::test_recusa_exige_justificativa_e_registra_historico PASSED [ 84%]
+tests/test_reembolsos.py::test_operacoes_restritas_exigem_login PASSED   [ 92%]
+tests/test_reembolsos.py::test_financeiro_so_consulta_solicitacoes_encaminhadas_ou_ja_analisadas PASSED [100%]
+
+============================== warnings summary ===============================
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\anyio\pytest_plugin.py:14
+  C:\Users\hardz\AppData\Local\Programs\Python\Python312\Lib\site-packages\anyio\pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\hardz\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 13 passed, 2 warnings in 13.59s =======================
